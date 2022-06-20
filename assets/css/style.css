@@ -133,6 +133,10 @@ h2, h3, h4 {
     width: 100%;
 }
 
+.blurb p {
+    padding: 10px 0 0 0;
+}
+
 .big-work{
     grid-area: big;
     margin: 0;
@@ -190,12 +194,12 @@ h2, h3, h4 {
 }
 
 .image-title {
-    font-size: 2em;
+    font-size: 1.75em;
     font-weight: bold;
 }
 
 .image-description {
-    font-size: 1.25em;
+    font-size: 1em;
     margin-top: 1em;
 }
 
@@ -399,6 +403,7 @@ footer {
     }
 }
 
+/* arrow to top */
     .top {
         position: fixed;
         bottom: 10px;
