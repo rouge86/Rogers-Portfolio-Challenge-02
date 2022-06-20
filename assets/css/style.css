@@ -73,6 +73,11 @@ figure {
     display: flex;
     justify-content: flex-end;
     margin-top: -100px;
+    text-align: center;
+    font-size: 2em;
+    font-style: italic;
+    line-height: 2.5em;
+    height: auto;
     
 }
 
@@ -80,7 +85,7 @@ figcaption {
     color: white;
     background: #31343dbb;
     padding: 10px;
-    width: 33%;
+
 }
 
 .hero {
@@ -140,9 +145,58 @@ h2, h3, h4 {
     transition: all 0.5s ease-in-out;
     }
 
-img#big-card {
-    width: 100%;
 
+/* set up overlay styling */
+/*https://www.youtube.com/watch?v=exb2ab72Xhs */
+.big-work, .card-2, .card-3 {
+    position: relative;
+}
+
+#big-card, #small-card {
+    display: block;
+    width: 100%;
+}
+
+.card-overlay {
+    position: absolute;
+    top:0;
+    left:0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,.6);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.25s;
+}
+
+/* '> *' this means target every direct child of card-overlay eg. image-title, image description */
+/* Start overlay from 20px down Y-axis */
+.card-overlay > * {
+    transform: translateY(20px);
+    transition: transform 0.25s;
+} 
+
+.card-overlay:hover {
+    opacity: 1;
+}
+
+/* When hover restore overlay text to 0 Y-axis */
+.card-overlay:hover > * {
+    transform: translateY(0px);
+}
+
+.image-title {
+    font-size: 2em;
+    font-weight: bold;
+}
+
+.image-description {
+    font-size: 1.25em;
+    margin-top: 1em;
 }
 
 #small-card {
@@ -234,6 +288,7 @@ footer {
       text-align: center;
       width: 100%;
       text-underline-offset: 0;
+      padding: 0;
       
     }
 
@@ -242,6 +297,7 @@ footer {
         background: #92CCCD;
         color: white;
         width: 100%;
+        
     }
 
     .navigation-list a {
@@ -290,6 +346,10 @@ footer {
     h2, h3, h4 {
         padding-top: 40px;
         margin:0;
+    }
+
+    .blurb {
+        padding: 20px;
     }
 
     aside, article, section, footer {
