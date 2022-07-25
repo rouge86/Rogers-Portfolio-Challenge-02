@@ -11,7 +11,7 @@ Challenge Week Two Create a Portfolio displaying links
 ![alt text](https://github.com/rouge86/Rogers-Portfolio-Challenge-02/blob/5d17879edba84d8fa0f486eb37cba2c9567ae61e/rogerportfolio.png?raw=true)
 
 ## Link to live page
-(https://rouge86.github.io/RogerRefactorsHoriseon/)
+(https://rouge86.github.io/Rogers-Portfolio-Challenge-02/)
 
 
 
